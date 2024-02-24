@@ -1,0 +1,30 @@
+* npm init -y
+* npm i express
+* npm i ejs
+* npm i mongoose
+* app.js
+* app.listen (8080)
+* app.get (/)
+* check db - show dbs(moongose)- not yet - so create
+* for db create async function (main) in - app.js and add url (moongose)
+* call main()- .then and . catch 
+* Create Models (Listning.js)--title,description,image,price,location,country.
+* image - use virtual doc (mongoose)- set and get value 
+*  add link into img properties
+* require listning.js in app.js
+*  app.get (/testListning) - app.js & res.send()
+* check mongoose - dbs are created as a wonderlust 
+* db.listnings.find() - show database
+* Create init folder - create data.js - add data into array 
+* Create index.js in init folder - add mongoose and add data.js , listning.js
+* index route - GET/listnings -> all listnings
+* comment out /testListning in app.js
+*  craete /listnings --> const allListnings
+* create folder views-- listings (index.js -- add data)
+* require path in app.js
+* app.set("view engine","ejs");
+app.set("views",path.join(__dirname,'views'));
+*
+
+
+C:\Users\patel\OneDrive\Desktop\Projects\Airbnb\app.js
