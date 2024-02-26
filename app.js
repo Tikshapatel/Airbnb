@@ -80,7 +80,7 @@ app.listen (8080,()=>{
 });
 
 // ---------------------Create Route---------------------------------
-app.post("/listings",async(req,res)=>{
+app.post("/listings", async(req,res)=>{
     
     // let {title,description,image,price,country,location} = req.body;
     // let listing = req.body;
@@ -88,8 +88,8 @@ app.post("/listings",async(req,res)=>{
     // console.log(listing);
 
     // -------Add data----
-    const newListing = new Listing(req.body.listing);
+    const newListing = new Listning(req.body.listing);
     await newListing.save();
     res.redirect("/listings");
 
-})
+});
